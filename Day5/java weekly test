@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+public class WeeklyTest2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+        System.out.println("5. Remainder");
+
+        System.out.print("Choose an option (1-5): ");
+        int choice = scanner.nextInt();
+
+        if (choice < 1 || choice > 5) {
+            System.out.println("Invalid choice. Choose between 1 and 5.");
+            scanner.close();
+            return;
+        }
+
+        System.out.print("Enter the first number: ");
+        double first = scanner.nextDouble();
+
+        System.out.print("Enter the second number: ");
+        double second = scanner.nextDouble();
+
+        switch (choice) {
+            case 1:
+                System.out.println("Sum: " + (first + second));
+                break;
+
+            case 2:
+                System.out.println("Difference: " + (first - second));
+                break;
+
+            case 3:
+                System.out.println("Product: " + (first * second));
+                break;
+
+            case 4:
+                if (second == 0) {
+                    System.out.println("Cannot divide by zero.");
+                } else {
+                    System.out.println("Quotient: " + (first / second));
+                }
+                break;
+
+            case 5:
+                if (second == 0) {
+                    System.out.println("Cannot calculate remainder with zero.");
+                } else {
+                    System.out.println("Remainder: " + (first % second));
+                }
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+
+        scanner.close();
+    }
+}

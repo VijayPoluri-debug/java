@@ -90,3 +90,53 @@ By completing Week 1, I gained a better understanding of:
 ## Next Goal
 
 In the next week, I will continue practicing Java with loops, repeated operations, and more problem-solving exercises.
+
+
+# Week 2 - Loops and Number Logic
+
+## Overview
+
+During Week 2, I practiced Java loops, nested loops, number-based logic, and pattern programs.
+
+The main focus was understanding how loops repeat tasks, how counters work, and how modulus and division operators can be used to solve number problems.
+
+## Topics Covered
+
+- For loop
+- While loop
+- Nested loops
+- Loop counters
+- Increment and decrement operators
+- Modulus operator `%`
+- Division operator `/`
+- Factorial logic
+- Reverse number logic
+- Sum of digits
+- Palindrome checking
+- Prime number logic
+- Even and odd number counting
+- Star patterns
+- Number patterns
+- Alphabet patterns
+
+## Day 1 - For Loop Practice
+
+Programs completed:
+
+- For Loop Basics
+- Sum of N Numbers
+- Multiplication Table
+
+### Concepts Learned
+
+- Loop initialization
+- Loop condition
+- Increment and decrement
+- Repeating operations using `for` loops
+
+Example:
+
+```java
+for (int i = 1; i <= 10; i++) {
+    System.out.println(i);
+}
